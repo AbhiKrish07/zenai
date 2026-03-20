@@ -26,6 +26,9 @@ class ZenDatabase {
   static Completer<Database>? _dbCompleter;
 
   Future<Database> get database async {
+    if (kIsWeb) {
+       throw UnsupportedError('SQLite is not available on Web. Accessing database directly is prohibited.');
+    }
     if (_db != null) return _db!;
     if (_dbCompleter != null) return _dbCompleter!.future;
     _dbCompleter = Completer<Database>();
@@ -48,8 +51,6 @@ class ZenDatabase {
     const version = 16;
     if (kIsWeb) {
       debugPrint('[ZenDB] Web Platform detected. skipping SQLite init.');
-      // Return a dummy/mock value or throw a more descriptive error if needed.
-      // But for our current architecture, we just avoid calling db.
       throw UnsupportedError('SQLite is not available on Web. Use platform-specific storage.');
     }
     final dbPath = await getDatabasesPath();
@@ -119,7 +120,6 @@ class ZenDatabase {
         for (var item in list) {
           try {
             if (item is Map) {
-              // Use Map.from to ensure Map<String, dynamic> on Web
               tasks.add(Task.fromMap(Map<String, dynamic>.from(item)));
             }
           } catch (e) {
@@ -127,7 +127,6 @@ class ZenDatabase {
           }
         }
         
-        debugPrint('[ZenDB] Web Found ${tasks.length} tasks.');
         if (includeCompleted) return tasks;
         return tasks.where((t) => !t.completed).toList();
       } catch (e) {
@@ -136,11 +135,8 @@ class ZenDatabase {
       }
     }
     final db = await database;
-    debugPrint('[ZenDB] Querying tasks (includeCompleted: $includeCompleted)');
     final res = includeCompleted ? await db.query('tasks') : await db.query('tasks', where: 'completed = 0');
-    final tasks = res.map((m) => Task.fromMap(m)).toList();
-    debugPrint('[ZenDB] Found ${tasks.length} tasks.');
-    return tasks;
+    return res.map((m) => Task.fromMap(m)).toList();
   }
   Future<void> completeTask(String id) async {
     if (kIsWeb) {
@@ -190,68 +186,83 @@ class ZenDatabase {
 
   // ── SESSIONS & FOLDERS ──
   Future<List<ChatSession>> getChatSessions() async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('chat_sessions', where: 'is_deleted = 0');
     return res.map((m) => ChatSession.fromMap(m)).toList();
   }
   Future<void> insertChatSession(ChatSession s) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('chat_sessions', s.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<ChatSession>> getTrashSessions() async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('chat_sessions', where: 'is_deleted = 1');
     return res.map((m) => ChatSession.fromMap(m)).toList();
   }
   Future<void> trashChatSession(String id) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.update('chat_sessions', {'is_deleted': 1}, where: 'id = ?', whereArgs: [id]);
   }
   Future<void> restoreChatSession(String id) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.update('chat_sessions', {'is_deleted': 0}, where: 'id = ?', whereArgs: [id]);
   }
   Future<void> deleteChatSession(String id) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.delete('chat_sessions', where: 'id = ?', whereArgs: [id]);
   }
   Future<void> renameSession(String id, String title) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.update('chat_sessions', {'title': title}, where: 'id = ?', whereArgs: [id]);
   }
   Future<void> moveSessionToFolder(String s, String? f) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.update('chat_sessions', {'folder_id': f}, where: 'id = ?', whereArgs: [s]);
   }
   Future<void> updateSessionArchive(String s, bool a) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.update('chat_sessions', {'is_archived': a ? 1 : 0}, where: 'id = ?', whereArgs: [s]);
   }
   Future<void> createFolder(String n) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('folders', {'id': DateTime.now().millisecondsSinceEpoch.toString(), 'name': n});
   }
   Future<List<Map<String, dynamic>>> getFolders() async {
+    if (kIsWeb) return [];
     final db = await database;
     return await db.query('folders');
   }
 
   // ── MESSAGES ──
   Future<void> insertMessage(ChatMessage msg) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('chat_messages', msg.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<ChatMessage>> getRecentMessages({String? sessionId, int limit = 50}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = sessionId != null ? await db.query('chat_messages', where: 'session_id = ?', limit: limit) : await db.query('chat_messages', limit: limit);
     return res.map((m) => ChatMessage.fromMap(m)).toList();
   }
   Future<void> deleteMessage(String id) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.delete('chat_messages', where: 'id = ?', whereArgs: [id]);
   }
   Future<List<ChatMessage>> searchMessages(String q, {String? s}) async => [];
   Future<void> clearMessages({String? sessionId}) async {
+    if (kIsWeb) return;
     final db = await database;
     if (sessionId != null) { await db.delete('chat_messages', where: 'session_id = ?', whereArgs: [sessionId]); }
     else { await db.delete('chat_messages'); }
@@ -259,19 +270,23 @@ class ZenDatabase {
 
   // ── MEMORY ──
   Future<void> setMemory(String key, String value, {String category = 'general'}) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('memories', {'id': key, 'key': key, 'value': value, 'category': category, 'created_at': DateTime.now().toIso8601String(), 'updated_at': DateTime.now().toIso8601String()}, conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<String?> getMemory(String key) async {
+    if (kIsWeb) return null;
     final db = await database;
     final res = await db.query('memories', where: 'key = ?', whereArgs: [key]);
     return res.isNotEmpty ? res.first['value'] as String? : null;
   }
   Future<void> deleteMemory(String key) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.delete('memories', where: 'key = ?', whereArgs: [key]);
   }
   Future<List<MemorySlot>> getAllMemories() async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('memories');
     return res.map((m) => MemorySlot.fromMap(m)).toList();
@@ -283,19 +298,23 @@ class ZenDatabase {
 
   // ── EVENTS ──
   Future<void> insertEvent(CalendarEvent e) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('events', e.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<void> deleteEvent(String id) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.delete('events', where: 'id = ?', whereArgs: [id]);
   }
   Future<List<CalendarEvent>> getEvents({DateTime? from, DateTime? to}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('events');
     return res.map((m) => CalendarEvent.fromMap(m)).toList();
   }
   Future<List<CalendarEvent>> getUpcomingEvents({int hours = 24}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('events');
     return res.map((m) => CalendarEvent.fromMap(m)).toList();
@@ -303,10 +322,12 @@ class ZenDatabase {
 
   // ── STUDY ──
   Future<void> insertStudySession(StudySession s) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('study_sessions', s.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<StudySession>> getStudySessions({int days = 7}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('study_sessions');
     return res.map((m) => StudySession.fromMap(m)).toList();
@@ -317,19 +338,23 @@ class ZenDatabase {
 
   // ── ASSIGNMENTS ──
   Future<void> insertAssignment(Assignment a) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('assignments', a.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<Assignment>> getAssignments({String? status}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = status != null ? await db.query('assignments', where: 'status = ?', whereArgs: [status]) : await db.query('assignments');
     return res.map((m) => Assignment.fromMap(m)).toList();
   }
   Future<void> updateAssignmentGrade(String id, double g) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.update('assignments', {'grade': g}, where: 'id = ?', whereArgs: [id]);
   }
   Future<void> deleteAssignment(String id) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.delete('assignments', where: 'id = ?', whereArgs: [id]);
   }
@@ -337,29 +362,35 @@ class ZenDatabase {
 
   // ── READING ──
   Future<void> insertReadingItem(ReadingItem i) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('reading_items', i.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<ReadingItem>> getReadingItems({String? status}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = status != null ? await db.query('reading_items', where: 'status = ?', whereArgs: [status]) : await db.query('reading_items');
     return res.map((m) => ReadingItem.fromMap(m)).toList();
   }
   Future<void> updateReadingStatus(String id, String status) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.update('reading_items', {'status': status}, where: 'id = ?', whereArgs: [id]);
   }
 
   // ── FINANCE ──
   Future<void> insertExpense(Expense e) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('expenses', e.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<void> deleteExpense(String id) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.delete('expenses', where: 'id = ?', whereArgs: [id]);
   }
   Future<List<Expense>> getExpenses({int days = 30}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('expenses');
     return res.map((m) => Expense.fromMap(m)).toList();
@@ -369,10 +400,12 @@ class ZenDatabase {
 
   // ── MOOD ──
   Future<void> insertMood(MoodEntry e) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('mood_entries', e.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<MoodEntry>> getMoodHistory({int days = 30}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('mood_entries');
     return res.map((m) => MoodEntry.fromMap(m)).toList();
@@ -382,19 +415,23 @@ class ZenDatabase {
 
   // ── STARTUP ──
   Future<void> insertStartupMetrics(StartupMetrics m) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('startup_metrics', m.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<StartupMetrics?> getLatestStartupMetrics() async {
+    if (kIsWeb) return null;
     final db = await database;
     final res = await db.query('startup_metrics', orderBy: 'date DESC', limit: 1);
     return res.isNotEmpty ? StartupMetrics.fromMap(res.first) : null;
   }
   Future<void> insertInvestor(Investor i) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('investors', i.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<Investor>> getInvestors() async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = await db.query('investors');
     return res.map((m) => Investor.fromMap(m)).toList();
@@ -448,27 +485,33 @@ class ZenDatabase {
 
   // ── DASHBOARD & WIDGETS ──
   Future<List<Map<String, dynamic>>> getDashboardTiles() async {
+    if (kIsWeb) return [];
     final db = await database;
     return await db.query('dashboard_tiles');
   }
   Future<void> insertDashboardTile(Map<String, dynamic> t) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('dashboard_tiles', t, conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<void> updateDashboardTileData(String id, String d) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.update('dashboard_tiles', {'data': d}, where: 'id = ?', whereArgs: [id]);
   }
   Future<void> deleteDashboardTile(String id) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.delete('dashboard_tiles', where: 'id = ?', whereArgs: [id]);
   }
   Future<List<WidgetItem>> getHomeWidgets({String? userId}) async {
+    if (kIsWeb) return [];
     final db = await database;
     final res = userId != null ? await db.query('home_widgets', where: 'user_id = ?', whereArgs: [userId]) : await db.query('home_widgets');
     return res.map((m) => WidgetItem.fromMap(m)).toList();
   }
   Future<void> saveHomeWidget(WidgetItem w) async {
+    if (kIsWeb) return;
     final db = await database;
     await db.insert('home_widgets', w.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
