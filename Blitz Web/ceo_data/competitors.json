@@ -1,0 +1,28 @@
+{
+  "competitors": {
+    "cursor_ai": {
+      "id": "cursor_ai",
+      "name": "Cursor AI",
+      "domain": "cursor.sh",
+      "industry": "AI Development Tools",
+      "added": "2026-02-28",
+      "intel": []
+    },
+    "jasper_ai": {
+      "id": "jasper_ai",
+      "name": "Jasper AI",
+      "domain": "jasper.ai",
+      "industry": "AI Content & Marketing",
+      "added": "2026-02-28",
+      "intel": []
+    },
+    "copy_ai": {
+      "id": "copy_ai",
+      "name": "Copy.ai",
+      "domain": "copy.ai",
+      "industry": "AI Business Automation",
+      "added": "2026-02-28",
+      "intel": []
+    }
+  }
+}

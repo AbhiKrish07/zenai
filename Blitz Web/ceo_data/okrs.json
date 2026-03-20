@@ -1,0 +1,112 @@
+{
+  "objectives": [
+    {
+      "id": "obj_1772305033",
+      "title": "Hit $120K MRR by Q1 end",
+      "quarter": "Q1 2026",
+      "owner": "CEO",
+      "progress": 0,
+      "status": "on_track",
+      "key_results": [
+        {
+          "id": "kr_0_1772305033",
+          "description": "Close 3 enterprise deals >$5k/mo",
+          "target": 3,
+          "current": 1,
+          "unit": "deals",
+          "owner": ""
+        },
+        {
+          "id": "kr_1_1772305033",
+          "description": "Reduce churn below 3%",
+          "target": 3,
+          "current": 4.1,
+          "unit": "%",
+          "owner": ""
+        },
+        {
+          "id": "kr_2_1772305033",
+          "description": "Launch AI Agent marketplace",
+          "target": 100,
+          "current": 72,
+          "unit": "%",
+          "owner": ""
+        }
+      ],
+      "created_at": "2026-02-28T13:57:13.032642",
+      "updated_at": "2026-02-28T13:57:13.032642"
+    },
+    {
+      "id": "obj_1772305033",
+      "title": "Scale team to 22 people",
+      "quarter": "Q1 2026",
+      "owner": "CEO",
+      "progress": 0,
+      "status": "on_track",
+      "key_results": [
+        {
+          "id": "kr_0_1772305033",
+          "description": "Hire 2 senior engineers",
+          "target": 2,
+          "current": 0,
+          "unit": "hires",
+          "owner": ""
+        },
+        {
+          "id": "kr_1_1772305033",
+          "description": "Hire Head of Customer Success",
+          "target": 1,
+          "current": 0,
+          "unit": "hire",
+          "owner": ""
+        },
+        {
+          "id": "kr_2_1772305033",
+          "description": "Complete new employee onboarding v2",
+          "target": 100,
+          "current": 40,
+          "unit": "%",
+          "owner": ""
+        }
+      ],
+      "created_at": "2026-02-28T13:57:13.065979",
+      "updated_at": "2026-02-28T13:57:13.065979"
+    },
+    {
+      "id": "obj_1772305033",
+      "title": "Build Brand & Thought Leadership",
+      "quarter": "Q1 2026",
+      "owner": "CEO",
+      "progress": 0,
+      "status": "on_track",
+      "key_results": [
+        {
+          "id": "kr_0_1772305033",
+          "description": "Publish 8 blog posts / case studies",
+          "target": 8,
+          "current": 3,
+          "unit": "posts",
+          "owner": ""
+        },
+        {
+          "id": "kr_1_1772305033",
+          "description": "Speak at 2 conferences",
+          "target": 2,
+          "current": 1,
+          "unit": "talks",
+          "owner": ""
+        },
+        {
+          "id": "kr_2_1772305033",
+          "description": "Grow LinkedIn to 5K",
+          "target": 5000,
+          "current": 3200,
+          "unit": "followers",
+          "owner": ""
+        }
+      ],
+      "created_at": "2026-02-28T13:57:13.089843",
+      "updated_at": "2026-02-28T13:57:13.089843"
+    }
+  ]
+}

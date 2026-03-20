@@ -1,0 +1,64 @@
+name: blitz_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  flutter_secure_storage: ^9.2.4
+  http: ^1.1.0
+  uuid: ^4.5.3
+  sqflite: ^2.3.0
+  sqflite_common_ffi_web: ^0.4.2+1
+  path: ^1.9.1
+  intl: ^0.20.2
+  flutter_tts: ^3.8.5
+  speech_to_text: ^6.6.0
+  workmanager: ^0.5.1
+  flutter_local_notifications: ^16.3.3
+  shared_preferences: ^2.2.0
+  path_provider: ^2.1.0
+  image_picker: ^1.0.8
+  url_launcher: ^6.2.4
+  flutter_markdown: ^0.6.19
+  permission_handler: ^10.4.5
+  connectivity_plus: ^4.0.2
+  share_plus: ^7.2.2
+  battery_plus: ^4.1.0
+  local_auth: ^2.1.8
+  # google_sign_in removed as requested
+  just_audio: ^0.9.37
+  audioplayers: ^5.2.1
+  web_socket_channel: ^2.3.0
+  flutter_timezone: ^1.0.8
+  json_annotation: ^4.9.0
+  timezone: ^0.9.4
+  rxdart: ^0.27.7
+  code_text_field: ^1.1.0
+  highlight: ^0.7.0
+  flutter_highlight: ^0.7.0
+  linked_scroll_controller: ^0.2.0
+  universal_io: ^2.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.3
+  build_runner: ^2.4.8
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/animations/

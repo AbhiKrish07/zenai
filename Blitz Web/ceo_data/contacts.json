@@ -1,0 +1,64 @@
+{
+  "contacts": {
+    "vc_mark": {
+      "id": "vc_mark",
+      "name": "Mark Yuen",
+      "role": "Partner",
+      "company": "Embark Ventures",
+      "notes": "Lead investor, Series A",
+      "relationship": "investor",
+      "last_touchpoint": "2026-02-28",
+      "updated_at": "2026-02-28",
+      "created_at": "2026-02-28",
+      "history": []
+    },
+    "client_sarah": {
+      "id": "client_sarah",
+      "name": "Sarah Lin",
+      "role": "VP Engineering",
+      "company": "NexGen Health",
+      "notes": "Enterprise client, $8k/mo retainer",
+      "relationship": "client",
+      "last_touchpoint": "2026-02-28",
+      "updated_at": "2026-02-28",
+      "created_at": "2026-02-28",
+      "history": []
+    },
+    "client_james": {
+      "id": "client_james",
+      "name": "James Park",
+      "role": "CEO",
+      "company": "Motiv AI",
+      "notes": "AI consulting deal, $15k project",
+      "relationship": "client",
+      "last_touchpoint": "2026-02-28",
+      "updated_at": "2026-02-28",
+      "created_at": "2026-02-28",
+      "history": []
+    },
+    "advisor_lisa": {
+      "id": "advisor_lisa",
+      "name": "Lisa Ng",
+      "role": "Founder",
+      "company": "Suki AI",
+      "notes": "Advisor, weekly 1:1",
+      "relationship": "advisor",
+      "last_touchpoint": "2026-02-28",
+      "updated_at": "2026-02-28",
+      "created_at": "2026-02-28",
+      "history": []
+    },
+    "partner_raj": {
+      "id": "partner_raj",
+      "name": "Raj Mehta",
+      "role": "CTO",
+      "company": "DataFlow Inc",
+      "notes": "Integration partner",
+      "relationship": "partner",
+      "last_touchpoint": "2026-02-28",
+      "updated_at": "2026-02-28",
+      "created_at": "2026-02-28",
+      "history": []
+    }
+  }
+}

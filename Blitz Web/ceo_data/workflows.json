@@ -1,0 +1,19 @@
+{
+  "workflows": [
+    {
+      "id": "wf_1772303061",
+      "name": "Post-Board Meeting",
+      "trigger": "after_board_meeting",
+      "steps": [
+        "Send summary to board members",
+        "Update investor doc",
+        "Create action items",
+        "Schedule follow-ups"
+      ],
+      "enabled": true,
+      "run_count": 0,
+      "last_run": null,
+      "created": "2026-02-28T13:24:21.988425"
+    }
+  ]
+}

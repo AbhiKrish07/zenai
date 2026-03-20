@@ -1,0 +1,54 @@
+{
+  "promises": [
+    {
+      "id": "p_1772305033",
+      "promised_by": "CEO",
+      "promised_to": "Board",
+      "what": "Present Q1 growth plan with updated projections",
+      "due_date": "2026-03-10",
+      "context": "Board meeting",
+      "status": "open",
+      "created": "2026-02-28 13:57"
+    },
+    {
+      "id": "p_1772305033",
+      "promised_by": "CEO",
+      "promised_to": "Sarah Lin (NexGen)",
+      "what": "Deliver custom AI dashboard by March 15",
+      "due_date": "2026-03-15",
+      "context": "Client call",
+      "status": "open",
+      "created": "2026-02-28 13:57"
+    },
+    {
+      "id": "p_1772305033",
+      "promised_by": "CTO",
+      "promised_to": "CEO",
+      "what": "Complete SOC2 prep checklist",
+      "due_date": "2026-03-01",
+      "context": "Team standup",
+      "status": "open",
+      "created": "2026-02-28 13:57"
+    },
+    {
+      "id": "p_1772305033",
+      "promised_by": "CEO",
+      "promised_to": "Lisa Ng",
+      "what": "Intro to 2 potential enterprise clients",
+      "due_date": "2026-03-07",
+      "context": "Advisory call",
+      "status": "open",
+      "created": "2026-02-28 13:57"
+    },
+    {
+      "id": "p_1772305033",
+      "promised_by": "PM",
+      "promised_to": "CEO",
+      "what": "Ship agent marketplace beta",
+      "due_date": "2026-02-28",
+      "context": "Sprint planning",
+      "status": "overdue",
+      "created": "2026-02-28 13:57"
+    }
+  ]
+}

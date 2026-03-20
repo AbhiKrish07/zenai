@@ -1,0 +1,151 @@
+{
+  "members": {
+    "ceo": {
+      "id": "ceo",
+      "name": "Abhi K.",
+      "role": "CEO & Founder",
+      "department": "Executive",
+      "manager_id": "",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": [
+        "cto",
+        "coo"
+      ]
+    },
+    "cto": {
+      "id": "cto",
+      "name": "Raj P.",
+      "role": "CTO",
+      "department": "Engineering",
+      "manager_id": "ceo",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": [
+        "lead_eng",
+        "ml_eng"
+      ]
+    },
+    "coo": {
+      "id": "coo",
+      "name": "Maya S.",
+      "role": "COO",
+      "department": "Operations",
+      "manager_id": "ceo",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": [
+        "designer",
+        "pm",
+        "mktg",
+        "sales1",
+        "sales2"
+      ]
+    },
+    "lead_eng": {
+      "id": "lead_eng",
+      "name": "Jordan L.",
+      "role": "Lead Engineer",
+      "department": "Engineering",
+      "manager_id": "cto",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": [
+        "fullstack1",
+        "fullstack2"
+      ]
+    },
+    "ml_eng": {
+      "id": "ml_eng",
+      "name": "Priya M.",
+      "role": "ML Engineer",
+      "department": "Engineering",
+      "manager_id": "cto",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": []
+    },
+    "fullstack1": {
+      "id": "fullstack1",
+      "name": "Alex T.",
+      "role": "Full-Stack Dev",
+      "department": "Engineering",
+      "manager_id": "lead_eng",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": []
+    },
+    "fullstack2": {
+      "id": "fullstack2",
+      "name": "Sam W.",
+      "role": "Full-Stack Dev",
+      "department": "Engineering",
+      "manager_id": "lead_eng",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": []
+    },
+    "designer": {
+      "id": "designer",
+      "name": "Nikki R.",
+      "role": "UI/UX Designer",
+      "department": "Design",
+      "manager_id": "coo",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": []
+    },
+    "pm": {
+      "id": "pm",
+      "name": "Chris D.",
+      "role": "Product Manager",
+      "department": "Product",
+      "manager_id": "coo",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": []
+    },
+    "mktg": {
+      "id": "mktg",
+      "name": "Taylor B.",
+      "role": "Growth Lead",
+      "department": "Marketing",
+      "manager_id": "coo",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": []
+    },
+    "sales1": {
+      "id": "sales1",
+      "name": "Devon K.",
+      "role": "Account Executive",
+      "department": "Sales",
+      "manager_id": "coo",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": []
+    },
+    "sales2": {
+      "id": "sales2",
+      "name": "Riley F.",
+      "role": "SDR",
+      "department": "Sales",
+      "manager_id": "coo",
+      "level": "IC",
+      "location": "",
+      "added": "2026-02-28",
+      "direct_reports": []
+    }
+  }
+}

@@ -1,0 +1,5381 @@
+{
+  "habits": {
+    "deep_work": {
+      "id": "deep_work",
+      "name": "Deep Work (2+ hrs)",
+      "icon": "🧠",
+      "target_per_month": 22,
+      "created": "2026-02-28"
+    },
+    "exercise": {
+      "id": "exercise",
+      "name": "Exercise / Movement",
+      "icon": "🏋️",
+      "target_per_month": 20,
+      "created": "2026-02-28"
+    },
+    "reading": {
+      "id": "reading",
+      "name": "Read 30 min",
+      "icon": "📚",
+      "target_per_month": 25,
+      "created": "2026-02-28"
+    },
+    "meditation": {
+      "id": "meditation",
+      "name": "Meditation",
+      "icon": "🧘",
+      "target_per_month": 22,
+      "created": "2026-02-28"
+    },
+    "networking": {
+      "id": "networking",
+      "name": "1 Connection / Outreach",
+      "icon": "🤝",
+      "target_per_month": 18,
+      "created": "2026-02-28"
+    }
+  },
+  "logs": [
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-09-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-09-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-09-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-09-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-09-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-09-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-09-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-09-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-09-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-09-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-09-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-09-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-09-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-09-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-09-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-10-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-10-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-10-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-10-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-10-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-10-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-10-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-10-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-10-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-10-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-10-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-10-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-10-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-10-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-10-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-10-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-10-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-10-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-10-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-10-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-10-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-10-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-10-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-11-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-11-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-11-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-11-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-11-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-11-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-11-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-11-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-11-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-11-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-11-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-11-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-11-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-11-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-12-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-12-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-12-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-12-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-12-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-12-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-12-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-12-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-12-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-12-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2025-12-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2025-12-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2025-12-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-12-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2025-12-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2025-12-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2025-12-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2025-12-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2025-12-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2025-12-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2025-12-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2026-01-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2026-01-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2026-01-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2026-01-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2026-01-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2026-01-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2026-01-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2026-01-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-01-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-01-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-01-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2026-01-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-29",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2026-01-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-01-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-01-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-01-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-01-30",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2026-02-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-01",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-02",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-03",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2026-02-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-04",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-05",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2026-02-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-02-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-06",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-07",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": false,
+      "date": "2026-02-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-08",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2026-02-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2026-02-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-09",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-02-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-10",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2026-02-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-11",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-12",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-13",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-14",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-15",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-16",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-17",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-18",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2026-02-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-19",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-20",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-21",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": false,
+      "date": "2026-02-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-22",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": false,
+      "date": "2026-02-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-23",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-24",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-25",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": false,
+      "date": "2026-02-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-26",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": false,
+      "date": "2026-02-27",
+      "notes": ""
+    },
+    {
+      "habit_id": "deep_work",
+      "done": true,
+      "date": "2026-02-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "exercise",
+      "done": true,
+      "date": "2026-02-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "reading",
+      "done": true,
+      "date": "2026-02-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "meditation",
+      "done": true,
+      "date": "2026-02-28",
+      "notes": ""
+    },
+    {
+      "habit_id": "networking",
+      "done": true,
+      "date": "2026-02-28",
+      "notes": ""
+    }
+  ]
+}

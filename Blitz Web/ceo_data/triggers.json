@@ -1,0 +1,15 @@
+{
+  "triggers": [
+    {
+      "id": "trig_1772303062",
+      "name": "Revenue Drop Alert",
+      "condition": "revenue_drops",
+      "action": "Alert CEO",
+      "threshold": 10.0,
+      "enabled": true,
+      "fired_count": 0,
+      "last_fired": null,
+      "created": "2026-02-28T13:24:22.017125"
+    }
+  ]
+}

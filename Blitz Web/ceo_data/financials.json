@@ -1,0 +1,76 @@
+{
+  "snapshots": [
+    {
+      "period": "2025-09",
+      "recorded_at": "2026-02-28T13:57:11.644631",
+      "mrr": 42000,
+      "arr": 504000,
+      "burn_rate": 95000,
+      "runway_months": 18,
+      "cash": 1710000,
+      "headcount": 12,
+      "headcount_cost": 78000,
+      "gross_margin": 68
+    },
+    {
+      "period": "2025-10",
+      "recorded_at": "2026-02-28T13:57:11.713773",
+      "mrr": 51000,
+      "arr": 612000,
+      "burn_rate": 100000,
+      "runway_months": 17,
+      "cash": 1610000,
+      "headcount": 14,
+      "headcount_cost": 82000,
+      "gross_margin": 69
+    },
+    {
+      "period": "2025-11",
+      "recorded_at": "2026-02-28T13:57:11.736408",
+      "mrr": 62000,
+      "arr": 744000,
+      "burn_rate": 108000,
+      "runway_months": 16,
+      "cash": 1502000,
+      "headcount": 15,
+      "headcount_cost": 85000,
+      "gross_margin": 70
+    },
+    {
+      "period": "2025-12",
+      "recorded_at": "2026-02-28T13:57:11.763464",
+      "mrr": 71000,
+      "arr": 852000,
+      "burn_rate": 115000,
+      "runway_months": 15,
+      "cash": 1387000,
+      "headcount": 16,
+      "headcount_cost": 89000,
+      "gross_margin": 71
+    },
+    {
+      "period": "2026-01",
+      "recorded_at": "2026-02-28T13:57:11.798933",
+      "mrr": 79000,
+      "arr": 948000,
+      "burn_rate": 118000,
+      "runway_months": 14.5,
+      "cash": 1269000,
+      "headcount": 17,
+      "headcount_cost": 92000,
+      "gross_margin": 72
+    },
+    {
+      "period": "2026-02",
+      "recorded_at": "2026-02-28T13:57:11.828145",
+      "mrr": 88000,
+      "arr": 1056000,
+      "burn_rate": 122000,
+      "runway_months": 14,
+      "cash": 1147000,
+      "headcount": 18,
+      "headcount_cost": 96000,
+      "gross_margin": 73
+    }
+  ]
+}

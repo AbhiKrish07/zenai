@@ -1,0 +1,364 @@
+{
+  "entries": [
+    {
+      "source": "whoop",
+      "date": "2026-01-30",
+      "ingested_at": "2026-02-28T13:57:31.563774",
+      "data": {
+        "hrv": 47.2,
+        "recovery": 78,
+        "sleep_score": 82,
+        "strain": 14.4,
+        "resting_hr": 56
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-01-31",
+      "ingested_at": "2026-02-28T13:57:31.580973",
+      "data": {
+        "hrv": 46.2,
+        "recovery": 66,
+        "sleep_score": 86,
+        "strain": 8.4,
+        "resting_hr": 54
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-01",
+      "ingested_at": "2026-02-28T13:57:31.594402",
+      "data": {
+        "hrv": 44.8,
+        "recovery": 76,
+        "sleep_score": 77,
+        "strain": 12.1,
+        "resting_hr": 58
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-02",
+      "ingested_at": "2026-02-28T13:57:31.608659",
+      "data": {
+        "hrv": 47.2,
+        "recovery": 66,
+        "sleep_score": 86,
+        "strain": 14.7,
+        "resting_hr": 60
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-03",
+      "ingested_at": "2026-02-28T13:57:31.624867",
+      "data": {
+        "hrv": 52.7,
+        "recovery": 69,
+        "sleep_score": 87,
+        "strain": 12.2,
+        "resting_hr": 57
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-04",
+      "ingested_at": "2026-02-28T13:57:31.640333",
+      "data": {
+        "hrv": 44.4,
+        "recovery": 70,
+        "sleep_score": 83,
+        "strain": 14.3,
+        "resting_hr": 56
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-05",
+      "ingested_at": "2026-02-28T13:57:31.654566",
+      "data": {
+        "hrv": 56.2,
+        "recovery": 74,
+        "sleep_score": 67,
+        "strain": 14.0,
+        "resting_hr": 50
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-06",
+      "ingested_at": "2026-02-28T13:57:31.668971",
+      "data": {
+        "hrv": 41.6,
+        "recovery": 72,
+        "sleep_score": 83,
+        "strain": 14.0,
+        "resting_hr": 55
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-07",
+      "ingested_at": "2026-02-28T13:57:31.681484",
+      "data": {
+        "hrv": 51.7,
+        "recovery": 65,
+        "sleep_score": 94,
+        "strain": 12.5,
+        "resting_hr": 56
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-08",
+      "ingested_at": "2026-02-28T13:57:31.694476",
+      "data": {
+        "hrv": 48.8,
+        "recovery": 84,
+        "sleep_score": 81,
+        "strain": 13.3,
+        "resting_hr": 55
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-09",
+      "ingested_at": "2026-02-28T13:57:31.706705",
+      "data": {
+        "hrv": 48.1,
+        "recovery": 77,
+        "sleep_score": 80,
+        "strain": 13.2,
+        "resting_hr": 54
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-10",
+      "ingested_at": "2026-02-28T13:57:31.720313",
+      "data": {
+        "hrv": 55.3,
+        "recovery": 79,
+        "sleep_score": 90,
+        "strain": 14.3,
+        "resting_hr": 57
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-11",
+      "ingested_at": "2026-02-28T13:57:31.733425",
+      "data": {
+        "hrv": 49.8,
+        "recovery": 83,
+        "sleep_score": 80,
+        "strain": 11.1,
+        "resting_hr": 54
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-12",
+      "ingested_at": "2026-02-28T13:57:31.750310",
+      "data": {
+        "hrv": 39.4,
+        "recovery": 86,
+        "sleep_score": 89,
+        "strain": 10.3,
+        "resting_hr": 53
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-13",
+      "ingested_at": "2026-02-28T13:57:31.765450",
+      "data": {
+        "hrv": 46.0,
+        "recovery": 70,
+        "sleep_score": 83,
+        "strain": 13.6,
+        "resting_hr": 57
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-14",
+      "ingested_at": "2026-02-28T13:57:31.780087",
+      "data": {
+        "hrv": 52.8,
+        "recovery": 78,
+        "sleep_score": 83,
+        "strain": 9.8,
+        "resting_hr": 54
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-15",
+      "ingested_at": "2026-02-28T13:57:31.794253",
+      "data": {
+        "hrv": 52.9,
+        "recovery": 60,
+        "sleep_score": 88,
+        "strain": 15.5,
+        "resting_hr": 56
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-16",
+      "ingested_at": "2026-02-28T13:57:31.810511",
+      "data": {
+        "hrv": 51.8,
+        "recovery": 73,
+        "sleep_score": 88,
+        "strain": 14.3,
+        "resting_hr": 57
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-17",
+      "ingested_at": "2026-02-28T13:57:31.823824",
+      "data": {
+        "hrv": 42.5,
+        "recovery": 84,
+        "sleep_score": 75,
+        "strain": 14.2,
+        "resting_hr": 55
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-18",
+      "ingested_at": "2026-02-28T13:57:31.838685",
+      "data": {
+        "hrv": 51.6,
+        "recovery": 88,
+        "sleep_score": 71,
+        "strain": 12.6,
+        "resting_hr": 53
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-19",
+      "ingested_at": "2026-02-28T13:57:31.853251",
+      "data": {
+        "hrv": 45.9,
+        "recovery": 77,
+        "sleep_score": 75,
+        "strain": 10.6,
+        "resting_hr": 54
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-20",
+      "ingested_at": "2026-02-28T13:57:31.870497",
+      "data": {
+        "hrv": 59.5,
+        "recovery": 74,
+        "sleep_score": 76,
+        "strain": 14.1,
+        "resting_hr": 52
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-21",
+      "ingested_at": "2026-02-28T13:57:31.888152",
+      "data": {
+        "hrv": 50.0,
+        "recovery": 82,
+        "sleep_score": 80,
+        "strain": 12.2,
+        "resting_hr": 49
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-22",
+      "ingested_at": "2026-02-28T13:57:31.904963",
+      "data": {
+        "hrv": 54.9,
+        "recovery": 75,
+        "sleep_score": 87,
+        "strain": 16.4,
+        "resting_hr": 53
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-23",
+      "ingested_at": "2026-02-28T13:57:31.921599",
+      "data": {
+        "hrv": 51.5,
+        "recovery": 65,
+        "sleep_score": 84,
+        "strain": 12.3,
+        "resting_hr": 58
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-24",
+      "ingested_at": "2026-02-28T13:57:31.937236",
+      "data": {
+        "hrv": 46.5,
+        "recovery": 69,
+        "sleep_score": 73,
+        "strain": 12.4,
+        "resting_hr": 60
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-25",
+      "ingested_at": "2026-02-28T13:57:31.950698",
+      "data": {
+        "hrv": 38.3,
+        "recovery": 61,
+        "sleep_score": 77,
+        "strain": 11.1,
+        "resting_hr": 51
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-26",
+      "ingested_at": "2026-02-28T13:57:31.964944",
+      "data": {
+        "hrv": 57.2,
+        "recovery": 68,
+        "sleep_score": 87,
+        "strain": 11.2,
+        "resting_hr": 49
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-27",
+      "ingested_at": "2026-02-28T13:57:31.981570",
+      "data": {
+        "hrv": 52.6,
+        "recovery": 86,
+        "sleep_score": 84,
+        "strain": 15.5,
+        "resting_hr": 53
+      }
+    },
+    {
+      "source": "whoop",
+      "date": "2026-02-28",
+      "ingested_at": "2026-02-28T13:57:31.996476",
+      "data": {
+        "hrv": 43.1,
+        "recovery": 79,
+        "sleep_score": 77,
+        "strain": 14.2,
+        "resting_hr": 54
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "open_roles": [
+    {
+      "id": "req_1772305033",
+      "title": "Senior Backend Engineer",
+      "department": "Engineering",
+      "priority": "urgent",
+      "description": "Python/FastAPI, 5+ yrs",
+      "target_date": "",
+      "status": "open",
+      "created": "2026-02-28",
+      "candidates": []
+    },
+    {
+      "id": "req_1772305033",
+      "title": "Head of Customer Success",
+      "department": "Customer Success",
+      "priority": "high",
+      "description": "B2B SaaS experience",
+      "target_date": "",
+      "status": "open",
+      "created": "2026-02-28",
+      "candidates": []
+    },
+    {
+      "id": "req_1772305033",
+      "title": "ML/AI Engineer",
+      "department": "Engineering",
+      "priority": "urgent",
+      "description": "LLM fine-tuning, RAG pipelines",
+      "target_date": "",
+      "status": "open",
+      "created": "2026-02-28",
+      "candidates": []
+    },
+    {
+      "id": "req_1772305033",
+      "title": "Content Marketing Manager",
+      "department": "Marketing",
+      "priority": "normal",
+      "description": "Tech/AI content",
+      "target_date": "",
+      "status": "open",
+      "created": "2026-02-28",
+      "candidates": []
+    }
+  ]
+}

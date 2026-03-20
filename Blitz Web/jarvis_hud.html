@@ -1,0 +1,8 @@
+var tItems='';
+  for(var _ti=0;_ti<Math.min(t.length,6);_ti++){
+    var tk=t[_ti];
+    var pri={urgent:'🔴',high:'🟠',medium:'🟡',low:'🟢'}[tk.priority]||'⚪';
+    var due=tk.due?' <span style="color:var(--muted);font-family:var(--mono);font-size:9px">'+tk.due+'</span>':'';
+    tItems+='<div style="padding:4px 0;border-bottom:1px solid var(--faint);font-size:11px">'+pri+' '+esc(tk.title)+due+'</div>';
+  }
+  tl.innerHTML=t.length?tItems:'<div style="color:var(--muted);font-size:11px">No pending tasks</div>';
