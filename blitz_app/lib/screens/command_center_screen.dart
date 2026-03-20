@@ -403,13 +403,31 @@ class _CommandCenterScreenState extends State<CommandCenterScreen> with SingleTi
               const SizedBox(width: 8),
               ElevatedButton(onPressed: () async {
                   if (titleCtrl.text.trim().isNotEmpty) {
-                    if (task.id.isEmpty) { 
-                      await _db.insertTask(Task(title: titleCtrl.text.trim(), description: descCtrl.text.trim(), priority: p)); 
-                    } else { 
-                      await _db.updateTask(task.copyWith(title: titleCtrl.text.trim(), description: descCtrl.text.trim(), priority: p)); 
+                    try {
+                      debugPrint('[Zen] Starting task assign process...');
+                      final newTask = Task(title: titleCtrl.text.trim(), description: descCtrl.text.trim(), priority: p);
+                      if (task.id.isEmpty) { 
+                        await _db.insertTask(newTask); 
+                        debugPrint('[Zen] Task inserted: ${newTask.id}');
+                      } else { 
+                        await _db.updateTask(task.copyWith(title: titleCtrl.text.trim(), description: descCtrl.text.trim(), priority: p)); 
+                        debugPrint('[Zen] Task updated: ${task.id}');
+                      }
+                      
+                      // Show feedback
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(task.id.isEmpty ? 'Task Assigned Successfully' : 'Task Updated'), backgroundColor: Colors.green.withValues(alpha: 0.2), behavior: SnackBarBehavior.floating));
+                      }
+
+                      await _loadAllData();
+                      debugPrint('[Zen] Post-assign data reloaded. Total tasks: ${_tasks.length}');
+                      if (context.mounted) Navigator.pop(context);
+                    } catch (e) {
+                      debugPrint('[Zen] Assign Error: $e');
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error: $e'), backgroundColor: Colors.red.withValues(alpha: 0.2)));
+                      }
                     }
-                    await _loadAllData();
-                    if (context.mounted) Navigator.pop(context);
                   }
                 }, style: ElevatedButton.styleFrom(backgroundColor: _accentColor, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))), child: Text(task.id.isEmpty ? 'Assign' : 'Update', style: GoogleFonts.dmSans(fontWeight: FontWeight.bold, color: Colors.black))),
             ]),
@@ -547,7 +565,7 @@ class _CommandCenterScreenState extends State<CommandCenterScreen> with SingleTi
     switch (index) {
       case 0: return _Page1Focus(userName: _userName, onTap: _navigateToModule, onLaunchApp: _launchApp, onAddTile: _showAddDashTileSheet, onRefresh: _loadAllData, dashboardTiles: _dashboardTiles, nextEvent: _nextEvent, tasks: _tasks, accentColor: _accentColor, onSelectApp: _selectAppUnified);
       case 1: return _Page2ZenAI(onRefresh: _loadAllData);
-      case 2: return _Page3Tasks(tasks: _tasks, db: _db, accentColor: _accentColor, onRefresh: _loadAllData, onEdit: _showEditTaskSheet, onAdd: () => _showEditTaskSheet(Task(id: '', title: '', priority: 'medium', createdAt: DateTime.now(), updatedAt: DateTime.now())));
+      case 2: return _Page3Tasks(key: ValueKey('tasks_page_${_tasks.length}_${_currentPage}'), tasks: _tasks, db: _db, accentColor: _accentColor, onRefresh: _loadAllData, onEdit: _showEditTaskSheet, onAdd: () => _showEditTaskSheet(Task(id: '', title: '', priority: 'medium', createdAt: DateTime.now(), updatedAt: DateTime.now())));
       case 3: return _Page4Modules(modules: _sortedModules, isRearranging: _isRearranging, onToggleRearrange: () => setState(() => _isRearranging = !_isRearranging), onReorder: (old, newVal) {
         setState(() { if (newVal > old) newVal -= 1; final m = _sortedModules.removeAt(old); _sortedModules.insert(newVal, m); });
         _saveModuleOrder();
@@ -972,7 +990,7 @@ class _Page2ZenAIState extends State<_Page2ZenAI> {
 // ─── PAGE 2: ASSIGNMENTS (FULL PAGE) ─────────────────────────────────────────
 class _Page3Tasks extends StatefulWidget {
   final List<Task> tasks; final ZenDatabase db; final Color accentColor; final VoidCallback onRefresh; final Function(Task) onEdit; final VoidCallback onAdd;
-  const _Page3Tasks({required this.tasks, required this.db, required this.accentColor, required this.onRefresh, required this.onEdit, required this.onAdd});
+  const _Page3Tasks({super.key, required this.tasks, required this.db, required this.accentColor, required this.onRefresh, required this.onEdit, required this.onAdd});
   @override State<_Page3Tasks> createState() => _Page3TasksState();
 }
 class _Page3TasksState extends State<_Page3Tasks> {
