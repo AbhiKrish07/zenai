@@ -186,85 +186,192 @@ class ZenDatabase {
 
   // ── SESSIONS & FOLDERS ──
   Future<List<ChatSession>> getChatSessions() async {
-    if (kIsWeb) return [];
+    if (kIsWeb) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final json = prefs.getString('zen_sessions_web') ?? '[]';
+        final List<dynamic> list = jsonDecode(json);
+        final sessions = list.map((m) => ChatSession.fromMap(Map<String, dynamic>.from(m))).toList();
+        return sessions.where((s) => !s.isDeleted).toList();
+      } catch (e) { return []; }
+    }
     final db = await database;
     final res = await db.query('chat_sessions', where: 'is_deleted = 0');
     return res.map((m) => ChatSession.fromMap(m)).toList();
   }
   Future<void> insertChatSession(ChatSession s) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final json = prefs.getString('zen_sessions_web') ?? '[]';
+        final List<dynamic> list = jsonDecode(json);
+        final map = s.toMap();
+        final idx = list.indexWhere((m) => m['id'] == s.id);
+        if (idx != -1) list[idx] = map; else list.add(map);
+        await prefs.setString('zen_sessions_web', jsonEncode(list));
+      } catch (_) {}
+      return;
+    }
     final db = await database;
     await db.insert('chat_sessions', s.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<ChatSession>> getTrashSessions() async {
-    if (kIsWeb) return [];
+    if (kIsWeb) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final json = prefs.getString('zen_sessions_web') ?? '[]';
+        final List<dynamic> list = jsonDecode(json);
+        final sessions = list.map((m) => ChatSession.fromMap(Map<String, dynamic>.from(m))).toList();
+        return sessions.where((s) => s.isDeleted).toList();
+      } catch (e) { return []; }
+    }
     final db = await database;
     final res = await db.query('chat_sessions', where: 'is_deleted = 1');
     return res.map((m) => ChatSession.fromMap(m)).toList();
   }
   Future<void> trashChatSession(String id) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final sessions = await getChatSessions();
+      final idx = sessions.indexWhere((s) => s.id == id);
+      if (idx != -1) await insertChatSession(sessions[idx].copyWith(isDeleted: true));
+      return;
+    }
     final db = await database;
     await db.update('chat_sessions', {'is_deleted': 1}, where: 'id = ?', whereArgs: [id]);
   }
   Future<void> restoreChatSession(String id) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final sessions = await getTrashSessions();
+      final idx = sessions.indexWhere((s) => s.id == id);
+      if (idx != -1) await insertChatSession(sessions[idx].copyWith(isDeleted: false));
+      return;
+    }
     final db = await database;
     await db.update('chat_sessions', {'is_deleted': 0}, where: 'id = ?', whereArgs: [id]);
   }
   Future<void> deleteChatSession(String id) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final prefs = await SharedPreferences.getInstance();
+      final json = prefs.getString('zen_sessions_web') ?? '[]';
+      final List<dynamic> list = jsonDecode(json);
+      list.removeWhere((m) => m['id'] == id);
+      await prefs.setString('zen_sessions_web', jsonEncode(list));
+      return;
+    }
     final db = await database;
     await db.delete('chat_sessions', where: 'id = ?', whereArgs: [id]);
   }
   Future<void> renameSession(String id, String title) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final sessions = await getChatSessions();
+      final idx = sessions.indexWhere((s) => s.id == id);
+      if (idx != -1) await insertChatSession(sessions[idx].copyWith(title: title));
+      return;
+    }
     final db = await database;
     await db.update('chat_sessions', {'title': title}, where: 'id = ?', whereArgs: [id]);
   }
   Future<void> moveSessionToFolder(String s, String? f) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final sessions = await getChatSessions();
+      final idx = sessions.indexWhere((item) => item.id == s);
+      if (idx != -1) await insertChatSession(sessions[idx].copyWith(folderId: f));
+      return;
+    }
     final db = await database;
     await db.update('chat_sessions', {'folder_id': f}, where: 'id = ?', whereArgs: [s]);
   }
   Future<void> updateSessionArchive(String s, bool a) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final sessions = await getChatSessions();
+      final idx = sessions.indexWhere((item) => item.id == s);
+      if (idx != -1) await insertChatSession(sessions[idx].copyWith(isArchived: a));
+      return;
+    }
     final db = await database;
     await db.update('chat_sessions', {'is_archived': a ? 1 : 0}, where: 'id = ?', whereArgs: [s]);
   }
   Future<void> createFolder(String n) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final prefs = await SharedPreferences.getInstance();
+      final json = prefs.getString('zen_folders_web') ?? '[]';
+      final List<dynamic> list = jsonDecode(json);
+      list.add({'id': DateTime.now().millisecondsSinceEpoch.toString(), 'name': n});
+      await prefs.setString('zen_folders_web', jsonEncode(list));
+      return;
+    }
     final db = await database;
     await db.insert('folders', {'id': DateTime.now().millisecondsSinceEpoch.toString(), 'name': n});
   }
   Future<List<Map<String, dynamic>>> getFolders() async {
-    if (kIsWeb) return [];
+    if (kIsWeb) {
+      final prefs = await SharedPreferences.getInstance();
+      final json = prefs.getString('zen_folders_web') ?? '[]';
+      final List<dynamic> list = jsonDecode(json);
+      return list.map((m) => Map<String, dynamic>.from(m)).toList();
+    }
     final db = await database;
     return await db.query('folders');
   }
 
   // ── MESSAGES ──
   Future<void> insertMessage(ChatMessage msg) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final json = prefs.getString('zen_messages_web') ?? '[]';
+        final List<dynamic> list = jsonDecode(json);
+        list.add(msg.toMap());
+        await prefs.setString('zen_messages_web', jsonEncode(list));
+      } catch (_) {}
+      return;
+    }
     final db = await database;
     await db.insert('chat_messages', msg.toMap(), conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<List<ChatMessage>> getRecentMessages({String? sessionId, int limit = 50}) async {
-    if (kIsWeb) return [];
+    if (kIsWeb) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final json = prefs.getString('zen_messages_web') ?? '[]';
+        final List<dynamic> list = jsonDecode(json);
+        final messages = list.map((m) => ChatMessage.fromMap(Map<String, dynamic>.from(m))).toList();
+        if (sessionId != null) return messages.where((m) => m.sessionId == sessionId).toList();
+        return messages;
+      } catch (e) { return []; }
+    }
     final db = await database;
     final res = sessionId != null ? await db.query('chat_messages', where: 'session_id = ?', limit: limit) : await db.query('chat_messages', limit: limit);
     return res.map((m) => ChatMessage.fromMap(m)).toList();
   }
   Future<void> deleteMessage(String id) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final prefs = await SharedPreferences.getInstance();
+      final json = prefs.getString('zen_messages_web') ?? '[]';
+      final List<dynamic> list = jsonDecode(json);
+      list.removeWhere((m) => m['id'] == id);
+      await prefs.setString('zen_messages_web', jsonEncode(list));
+      return;
+    }
     final db = await database;
     await db.delete('chat_messages', where: 'id = ?', whereArgs: [id]);
   }
   Future<List<ChatMessage>> searchMessages(String q, {String? s}) async => [];
   Future<void> clearMessages({String? sessionId}) async {
-    if (kIsWeb) return;
+    if (kIsWeb) {
+      final prefs = await SharedPreferences.getInstance();
+      if (sessionId != null) {
+        final json = prefs.getString('zen_messages_web') ?? '[]';
+        final List<dynamic> list = jsonDecode(json);
+        list.removeWhere((m) => m['session_id'] == sessionId);
+        await prefs.setString('zen_messages_web', jsonEncode(list));
+      } else {
+        await prefs.remove('zen_messages_web');
+      }
+      return;
+    }
     final db = await database;
-    if (sessionId != null) { await db.delete('chat_messages', where: 'session_id = ?', whereArgs: [sessionId]); }
+    if (sessionId != null) { await db.delete('chat_messages', where: 'id = ?', whereArgs: [sessionId]); }
     else { await db.delete('chat_messages'); }
   }
 

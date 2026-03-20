@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:math';
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import '../config.dart';
 import 'package:uuid/uuid.dart';
 import '../services/zilliz_service.dart';
 import 'database.dart';
@@ -53,7 +56,13 @@ class ZenBrain {
       _zillizEndpoint = await _secureStorage.read(key: 'zilliz_endpoint') ?? '';
       _zillizUser = await _secureStorage.read(key: 'zilliz_user') ?? '';
       _zillizKey = await _secureStorage.read(key: 'zilliz_key') ?? '';
-      _model = await _secureStorage.read(key: 'groq_model') ?? 'llama3-70b-8192';
+      _model = await _secureStorage.read(key: 'groq_model') ?? BlitzConfig.groqModel;
+      
+      // If user key is missing, try fallback to pool
+      if (_apiKey.isEmpty && BlitzConfig.groqKeyPool.isNotEmpty) {
+        debugPrint('[ZenBrain] Using key from fallback pool...');
+        _apiKey = BlitzConfig.groqKeyPool[Random().nextInt(BlitzConfig.groqKeyPool.length)];
+      }
     } catch (_) {}
     _initialized = true;
     _initCompleter?.complete();
