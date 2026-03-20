@@ -10,6 +10,7 @@ import 'package:intl/intl.dart';
 import 'package:http/http.dart' as http;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
+import '../core/theme_manager.dart';
 import '../core/database.dart';
 import '../core/session.dart';
 import '../models/task.dart';
@@ -103,7 +104,7 @@ class _CommandCenterScreenState extends State<CommandCenterScreen> with SingleTi
 
   Future<void> _loadAllData() async {
     final prefs = await SharedPreferences.getInstance();
-    final accentHex = prefs.getInt('zen_accent_color');
+    final accentHex = prefs.getInt('theme_color'); // Unified with ThemeManager
     final tasksData = await _db.getTasks(includeCompleted: true);
     final upcoming = await _db.getUpcomingEvents(hours: 48);
     await ZenSession().ensureInitialized();
@@ -1212,7 +1213,7 @@ class _Page4Modules extends StatelessWidget {
           ]),
         ]),
         const SizedBox(height: 24),
-        Expanded(child: isRearranging ? ReorderableListView.builder(itemCount: modules.length, onReorder: onReorder, itemBuilder: (context, i) => ListTile(key: Key(modules[i]['type']), leading: Icon(modules[i]['icon'], color: Colors.white54), title: Text(modules[i]['label'], style: const TextStyle(color: Colors.white)), trailing: const Icon(Icons.drag_handle, color: Colors.white12))) : GridView.builder(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, crossAxisSpacing: 12, mainAxisSpacing: 12, childAspectRatio: 1.0), itemCount: modules.length, itemBuilder: (context, i) => _ModuleCard(label: modules[i]['label'], icon: modules[i]['icon'], type: modules[i]['type'], onTap: onTap)))
+        Expanded(child: isRearranging ? ReorderableListView.builder(itemCount: modules.length, onReorder: onReorder, itemBuilder: (context, i) => ListTile(key: Key(modules[i]['type']), leading: Icon(modules[i]['icon'], color: accentColor.withValues(alpha: 0.5)), title: Text(modules[i]['label'], style: const TextStyle(color: Colors.white)), trailing: const Icon(Icons.drag_handle, color: Colors.white12))) : GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: MediaQuery.of(context).size.width > 900 ? 5 : (MediaQuery.of(context).size.width > 600 ? 3 : 2), crossAxisSpacing: 12, mainAxisSpacing: 12, childAspectRatio: 1.0), itemCount: modules.length, itemBuilder: (context, i) => _ModuleCard(label: modules[i]['label'], icon: modules[i]['icon'], type: modules[i]['type'], onTap: onTap, accentColor: accentColor)))
     ])));
   }
 }
@@ -1234,10 +1235,10 @@ class _TaskRowV6 extends StatelessWidget {
 }
 
 class _ModuleCard extends StatelessWidget {
-  final String label; final IconData icon; final String type; final Function(String) onTap;
-  const _ModuleCard({required this.label, required this.icon, required this.type, required this.onTap});
+  final String label; final IconData icon; final String type; final Function(String) onTap; final Color accentColor;
+  const _ModuleCard({required this.label, required this.icon, required this.type, required this.onTap, required this.accentColor});
   @override
-  Widget build(BuildContext context) { return GestureDetector(onTap: () => onTap(type), child: Container(decoration: BoxDecoration(color: const Color(0xFF1C1C1E), borderRadius: BorderRadius.circular(24), border: Border.all(color: Colors.white.withValues(alpha: 0.04))), padding: const EdgeInsets.all(18), child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [Icon(icon, color: const Color(0xFF888888), size: 24), Text(label, style: GoogleFonts.dmSans(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.white))]))); }
+  Widget build(BuildContext context) { return GestureDetector(onTap: () => onTap(type), child: Container(decoration: BoxDecoration(color: const Color(0xFF1C1C1E), borderRadius: BorderRadius.circular(24), border: Border.all(color: Colors.white.withValues(alpha: 0.04))), padding: const EdgeInsets.all(18), child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [Icon(icon, color: accentColor.withValues(alpha: 0.4), size: 24), Text(label, style: GoogleFonts.dmSans(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.white))]))); }
 }
 
 class _NextEventSnippet extends StatelessWidget {
