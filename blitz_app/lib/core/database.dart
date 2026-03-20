@@ -47,10 +47,10 @@ class ZenDatabase {
   Future<Database> _initDB() async {
     const version = 16;
     if (kIsWeb) {
-      debugPrint('[ZenDB] Initializing Web Database (In-Memory)...');
-      // On Web, we fallback to in-memory if ffi_web setup is problematic.
-      // This ensures the app remains functional.
-      return openDatabase(inMemoryDatabasePath, version: version, onCreate: _createTables);
+      debugPrint('[ZenDB] Web Platform detected. skipping SQLite init.');
+      // Return a dummy/mock value or throw a more descriptive error if needed.
+      // But for our current architecture, we just avoid calling db.
+      throw UnsupportedError('SQLite is not available on Web. Use platform-specific storage.');
     }
     final dbPath = await getDatabasesPath();
     final fullPath = '$dbPath/zen_v6.db';
@@ -72,7 +72,7 @@ class ZenDatabase {
     await db.execute('CREATE TABLE investors(id TEXT PRIMARY KEY, name TEXT, status TEXT, notes TEXT)');
     await db.execute('CREATE TABLE home_widgets(id TEXT PRIMARY KEY, user_id TEXT, type TEXT, x REAL, y REAL, width REAL, height REAL, data TEXT)');
     await db.execute('CREATE TABLE dashboard_tiles(id TEXT PRIMARY KEY, label TEXT, type TEXT, data TEXT)');
-    await db.execute('CREATE TABLE users(id TEXT PRIMARY KEY, username TEXT UNIQUE, passphrase TEXT, name TEXT, created_at TEXT)');
+    await db.execute('CREATE TABLE users(id TEXT PRIMARY KEY, username TEXT UNIQUE, passphrase_hash TEXT, name TEXT, created_at TEXT)');
     await db.execute('CREATE TABLE folders(id TEXT PRIMARY KEY, name TEXT)');
   }
 
@@ -402,17 +402,47 @@ class ZenDatabase {
 
   // ── AUTH ──
   Future<Map<String, dynamic>?> getUserByUsername(String u) async {
+    if (kIsWeb) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final usersJson = prefs.getString('zen_users_web') ?? '[]';
+        final List<dynamic> list = jsonDecode(usersJson);
+        final found = list.firstWhere((user) => user['username'] == u, orElse: () => null);
+        return found != null ? Map<String, dynamic>.from(found) : null;
+      } catch (e) {
+        debugPrint('[ZenDB] Web GetUser Error: $e');
+        return null;
+      }
+    }
     final db = await database;
     final res = await db.query('users', where: 'username = ?', whereArgs: [u]);
     return res.isNotEmpty ? res.first : null;
   }
   Future<void> insertUser(Map<String, dynamic> u) async {
+    if (kIsWeb) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final usersJson = prefs.getString('zen_users_web') ?? '[]';
+        final List<dynamic> list = jsonDecode(usersJson);
+        list.add(u);
+        await prefs.setString('zen_users_web', jsonEncode(list));
+        debugPrint('[ZenDB] Web User Saved: ${u['username']}');
+      } catch (e) {
+        debugPrint('[ZenDB] Web InsertUser Error: $e');
+      }
+      return;
+    }
     final db = await database;
     await db.insert('users', u, conflictAlgorithm: ConflictAlgorithm.replace);
   }
   Future<Map<String, dynamic>?> authenticateUser(String u, String p) async {
+    if (kIsWeb) {
+      final user = await getUserByUsername(u);
+      if (user != null && user['passphrase_hash'] == p) return user;
+      return null;
+    }
     final db = await database;
-    final res = await db.query('users', where: 'username = ? AND passphrase = ?', whereArgs: [u, p]);
+    final res = await db.query('users', where: 'username = ? AND passphrase_hash = ?', whereArgs: [u, p]);
     return res.isNotEmpty ? res.first : null;
   }
 
